@@ -1,0 +1,67 @@
+{
+  "name": "@unitedfutsal/cast-manager",
+  "version": "1.0.0",
+  "description": "A framework-agnostic Google Cast integration library for JavaScript/TypeScript applications",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js"
+    },
+    "./react": {
+      "types": "./dist/react/index.d.ts",
+      "import": "./dist/react/index.mjs",
+      "require": "./dist/react/index.js"
+    },
+    "./angular": {
+      "types": "./dist/angular/index.d.ts",
+      "import": "./dist/angular/index.mjs",
+      "require": "./dist/angular/index.js"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "type-check": "tsc --noEmit",
+    "prepublishOnly": "npm run build"
+  },
+  "author": "Hugo Rezende",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/unitedfutsal/cast-manager.git"
+  },
+  "peerDependencies": {
+    "react": ">=16.8.0",
+    "@angular/core": ">=12.0.0",
+    "rxjs": ">=6.0.0"
+  },
+  "peerDependenciesMeta": {
+    "react": {
+      "optional": true
+    },
+    "@angular/core": {
+      "optional": true
+    },
+    "rxjs": {
+      "optional": true
+    }
+  },
+  "devDependencies": {
+    "@angular/core": "^17.0.0",
+    "@types/chrome": "^0.0.270",
+    "@types/react": "^18.0.0",
+    "react": "^18.0.0",
+    "rxjs": "^7.8.0",
+    "tsup": "^8.0.0",
+    "typescript": "^5.0.0"
+  }
+}
