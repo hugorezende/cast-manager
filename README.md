@@ -13,7 +13,7 @@ A framework-agnostic Google Cast (Chromecast) integration library for JavaScript
 ## Installation
 
 ```bash
-npm install hugorezende/cast-manager
+npm install @hugorezende/cast-manager
 ```
 
 ## Usage
@@ -21,7 +21,7 @@ npm install hugorezende/cast-manager
 ### Vanilla JavaScript/TypeScript
 
 ```typescript
-import { CastManager, CastState } from "hugorezende/cast-manager";
+import { CastManager, CastState } from "@hugorezende/cast-manager";
 
 // Create and initialize the Cast Manager
 const castManager = new CastManager({
@@ -67,7 +67,7 @@ await castManager.endSession();
 ### React
 
 ```tsx
-import { useCastManager } from "hugorezende/cast-manager/react";
+import { useCastManager } from "@hugorezende/cast-manager/react";
 
 function CastButton() {
   const {
@@ -113,7 +113,7 @@ First, initialize the service in your app initialization:
 ```typescript
 // app.config.ts or app.module.ts
 import { APP_INITIALIZER } from "@angular/core";
-import { CastService } from "hugorezende/cast-manager/angular";
+import { CastService } from "@hugorezende/cast-manager/angular";
 
 export function initializeCast(castService: CastService) {
   return () =>
@@ -139,7 +139,7 @@ Then use it in your components:
 ```typescript
 import { Component } from "@angular/core";
 import { CommonModule } from "@angular/common";
-import { CastService } from "hugorezende/cast-manager/angular";
+import { CastService } from "@hugorezende/cast-manager/angular";
 
 @Component({
   selector: "app-cast-button",

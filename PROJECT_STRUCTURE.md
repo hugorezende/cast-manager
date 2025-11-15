@@ -62,17 +62,13 @@ The library provides multiple entry points:
 
 ```typescript
 // Core library
-import {
-  CastManager,
-  CastState,
-  SessionState,
-} from "@unitedfutsal/cast-manager";
+import { CastManager, CastState, SessionState } from "hugorezende/cast-manager";
 
 // React integration
-import { useCastManager } from "@unitedfutsal/cast-manager/react";
+import { useCastManager } from "hugorezende/cast-manager/react";
 
 // Angular integration
-import { CastService } from "@unitedfutsal/cast-manager/angular";
+import { CastService } from "hugorezende/cast-manager/angular";
 ```
 
 ## 🔧 Build System

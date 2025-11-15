@@ -1,5 +1,5 @@
 {
-  "name": "@unitedfutsal/cast-manager",
+  "name": "@hugorezende/cast-manager",
   "version": "1.0.0",
   "description": "A framework-agnostic Google Cast integration library for JavaScript/TypeScript applications",
   "main": "./dist/index.js",
@@ -37,7 +37,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/unitedfutsal/cast-manager.git"
+    "url": "https://github.com/hugorezende/cast-manager.git"
   },
   "peerDependencies": {
     "react": ">=16.8.0",
